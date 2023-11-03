@@ -1,0 +1,9 @@
+Name: Field Guide - Base
+ignoreDependencies: false
+VlocityDataPackKeys:
+    - ObjectClass/Field Guide - Base
+    - Product2/66126081-307c-09cc-cdca-b6e3270d3a1d
+VlocityTypesToFetch:
+    - ObjectClass
+    - Product2
+SalesforceTypesToFetch:

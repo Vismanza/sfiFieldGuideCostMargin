@@ -27,7 +27,7 @@ Navigate to *Vlocity Product Designer > Products > List View: All Products*. Ope
 
 #### Create a Price List Entry under Costs by click on *New Cost*.
 
-![Cost PLE](../images/1-cost-ple.png)
+![Cost PLE][1-cost-ple]
 
 - Price List: This should be the same list price as the Price defined for your product. If you have multiple price lists and for a single products
 - Display Name: Required but used in any UI components. Usually set to the same value as the Amount.
@@ -45,4 +45,57 @@ If using PLEs for costs they are considered fixed. If you need some dynamic logi
 
 #### LWC Cart
 
-Navigate to Industries CPQ > Orders > List View: All
+Navigate to *Industries CPQ > Orders > List View: All Orders*
+
+Click on New
+
+Account Name: Billy Bing (preloaded account from Express orgs)
+Status: Draft (default value is fine)
+Order Start Date: Current date
+
+Once the order is created and the LWC Cart Order page renders select a Price List (Default Price List).
+
+Add Boiler Insurance to the Cart. Navigate to the Cart tab.
+
+![Cost from LWC Cart][1-cost-cart]
+
+Click on the Action drop down for the line item and select Configure.
+
+![Cart Configure][1-cost-cart-configure]
+
+Notice that by default there is nothing new / difference in the LWC Cart. If your use case requires showing cost / margin data in the UI you will need to modify LWC cart accordingly.
+
+#### Cost & Margin Fields
+
+Naviate to Related Lists tab and click on the Boiler Insurance Order Product record. The fields we want to look at are not on the page layout, let's add them.
+
+For the purposes of illustration let's add all cost and margin fields under it's own sections (one each for one time charges, monthly recurring charges and usage pricing). This will be useful in the subsequent sections.
+
+Update the Page Layout as per screenshot (or pull if the SFDX Metadata in this repo).
+
+![Order Product Layout][1-order-product-layout]
+
+Refresh the Order Product page.
+
+![Order Product Record Detail][1-order-product-record]
+
+Now let's look at the Order header. Click on the Details tab. The fields we want to view are not here either, let's add them.
+
+Update the 'Order Layout' Page Layout as per screenshot (or pull if the SFDX Metadata in this repo). We will use a section called 'CPQ Rollups'.
+
+![Order Layout][1-order-layout]
+
+Notice that there are rollups at the header level for One Time Charges, Recurring Charges and Usage Pricing. If you are adding custom fields you will need to create header fields as well. 
+
+![Order Record][1-order-record]
+
+---
+
+[1-cost-cart]: ../images/1-cost-cart.png
+[1-cost-ple]: ../images/1-cost-ple.png
+[1-cost-cart-configure]: ../images/1-cost-cart-configure.png
+[1-order-product-layout]: ../images/1-order-product-layout.png
+[1-order-product-record]: ../images/1-order-product-record.png
+[1-order-layout]: ../images/1-order-layout.png
+[1-order-record]: ../images/1-order-record.png
+[1-order-record]: ../images/1-order-record.png
