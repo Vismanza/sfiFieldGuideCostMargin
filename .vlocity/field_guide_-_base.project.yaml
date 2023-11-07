@@ -1,9 +1,12 @@
 Name: Field Guide - Base
 ignoreDependencies: false
 VlocityDataPackKeys:
-    - ObjectClass/Field Guide - Base
+    - ObjectClass/b77b48-7ddf03-b44ac9-03c339-ead06636d
+    - ObjectClass/63ba6ae5f8c257f7cdccc385d2a85dca
     - Product2/66126081-307c-09cc-cdca-b6e3270d3a1d
+    - ObjectLayout/ffcdad4a-1ab1-2c9b-ee6b-67b35feef727
 VlocityTypesToFetch:
     - ObjectClass
+    - ObjectLayout
     - Product2
 SalesforceTypesToFetch:

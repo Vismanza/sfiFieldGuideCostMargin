@@ -1,0 +1,28 @@
+Name: Pricing Variables
+ignoreDependencies: false
+VlocityDataPackKeys:
+    - PricingVariable/EFFECTIVE_USAGE_QUANTITY
+    - PricingVariable/EFF_USAGE_STD_CST_TOTAL
+    - PricingVariable/EFF_USAGE_STD_PRC_TOTAL
+    - PricingVariable/GROUP_ROLLUP_USAGE_STD_CST_TOTAL
+    - PricingVariable/GROUP_ROLLUP_USAGE_STD_PRC_TOTAL
+    - PricingVariable/GROUP_USAGE_MARGIN_TOTAL
+    - PricingVariable/MASTER_ROLLUP_USAGE_STD_CST_TOTAL
+    - PricingVariable/MASTER_ROLLUP_USAGE_STD_PRC_TOTAL
+    - PricingVariable/MASTER_USAGE_MARGIN_TOTAL
+    - PricingVariable/PARENT_ROLLUP_USAGE_STD_CST_TOTAL
+    - PricingVariable/PARENT_ROLLUP_USAGE_STD_PRC_TOTAL
+    - PricingVariable/PARENT_USAGE_MARGIN_TOTAL
+    - PricingVariable/ROLLUP_USAGE_STD_CST_TOTAL
+    - PricingVariable/ROLLUP_USAGE_STD_PRC_TOTAL
+    - PricingVariable/USAGE_LINE_QUANTITY
+    - PricingVariable/USAGE_MARGIN
+    - PricingVariable/USAGE_STD_CST
+    - PricingVariable/USAGE_STD_CST_TOTAL
+    - PricingVariable/USAGE_STD_PRC
+    - PricingVariable/USAGE_STD_PRC_ADJ_ABS
+    - PricingVariable/USAGE_STD_PRC_ADJ_PCT
+    - PricingVariable/USAGE_STD_PRC_TOTAL
+VlocityTypesToFetch:
+    - PricingVariable
+SalesforceTypesToFetch:
