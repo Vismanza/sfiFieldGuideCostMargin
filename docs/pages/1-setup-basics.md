@@ -1,4 +1,8 @@
 
+# Setup Basics
+
+This section covers setting up the cost and margin feature and review the data model beneath the feature.
+
 ## Initial Setup
 
 Starting point is the [official documentation](https://help.salesforce.com/s/articleView?id=ind.comms_cost_and_margin_in_epc.htm&type=5). Follow the steps to configure Cost and Margin.
@@ -15,7 +19,7 @@ Notice that there **are** Cost / Margin Fields.
 
 When you Enable Cost and Margin, the Pricing Variables are created that connect CPQ to the relevant fields across xLI and Asset.
 
-This is an imoprtant consideration as it helps define the pattern required when adding custom fields (you will need to create the fields and Pricing Variables required). At this stage a hook is required to cover the calculation logic that is proved out of the box for One Time Charge, Monthly Recurring Charges and Usage Pricing.
+This is an important consideration as it helps define the pattern required when adding custom fields (you will need to create the fields and Pricing Variables required). At this stage a hook is required to cover the calculation logic that is proved out of the box for One Time Charge, Monthly Recurring Charges and Usage Pricing.
 
 #### Enable Cost and Margin Feature as per the [docs](https://help.salesforce.com/s/articleView?language=en_US&id=ind.comms_enabling_cost_and_margin.htm&type=5).
 

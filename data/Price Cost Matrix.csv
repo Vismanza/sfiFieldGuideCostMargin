@@ -1,0 +1,5 @@
+Source Product Name,Source Product Code,Characteristic Name,Characteristic Value,Recurring Price,Recurring Cost,One Time Price,One Time Cost,Usage Price,Usage Cost,Charge Measurement
+Test Product Attribute,TEST_ATT_PRODUCT,Distribution Region,Armagh,8,6.96,22,20.46,4.77294,4.29565,Day
+Test Product Attribute,TEST_ATT_PRODUCT,Distribution Region,Chichester,6,5.46,12,11.16,4.64669,4.32142,Day
+Test Product Attribute,TEST_ATT_PRODUCT,Distribution Region,Salisbury,11,10.01,15,13.5,4.83116,3.86493,Day
+Test Product Attribute,TEST_ATT_PRODUCT,Distribution Region,Derby,18,17.1,25,22,6.35323,5.33671,Day
