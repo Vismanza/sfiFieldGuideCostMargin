@@ -1,0 +1,320 @@
+57.0 APEX_CODE,FINEST;APEX_PROFILING,FINEST;CALLOUT,FINEST;DB,FINEST;NBA,FINE;SYSTEM,FINE;VALIDATION,INFO;VISUALFORCE,FINER;WAVE,FINER;WORKFLOW,FINER
+13:41:50.190 (190980551)|SAVEPOINT_SET|[246]|SavepointValue0
+13:41:50.190 (205139075)|DML_BEGIN|[23]|Op:Update|Type:SObject|Rows:1
+13:41:50.190 (279723409)|SOQL_EXECUTE_BEGIN|[78]|Aggregations:0|SELECT Id, GlobalKey2__c, PriceListId__r.Pricebook2Id__c FROM PricingElement__c WHERE Id = :tmpVar1
+13:41:50.190 (288728142)|SOQL_EXECUTE_EXPLAIN|[78]|No explain plan is available
+13:41:50.190 (288746615)|SOQL_EXECUTE_END|[78]|Rows:1
+13:41:50.190 (290109742)|SOQL_EXECUTE_BEGIN|[91]|Aggregations:0|SELECT Id FROM Pricebook2 WHERE IsStandard = TRUE LIMIT 1
+13:41:50.190 (293726896)|SOQL_EXECUTE_EXPLAIN|[91]|TableScan on Pricebook2 : [], cardinality: 1, sobjectCardinality: 2, relativeCost 0.65
+13:41:50.190 (293741758)|SOQL_EXECUTE_END|[91]|Rows:1
+13:41:50.190 (295287854)|SOQL_EXECUTE_BEGIN|[95]|Aggregations:0|SELECT Id, Name, Product2Id, Pricebook2Id, Product2.IsActive FROM PricebookEntry WHERE Product2Id = :tmpVar1
+13:41:50.190 (305866662)|SOQL_EXECUTE_EXPLAIN|[95]|No explain plan is available
+13:41:50.190 (305891902)|SOQL_EXECUTE_END|[95]|Rows:2
+13:41:50.190 (306631918)|SOQL_EXECUTE_BEGIN|[96]|Aggregations:0|SELECT Id, IsActive FROM Product2 WHERE ID = :tmpVar1
+13:41:50.190 (311820161)|SOQL_EXECUTE_EXPLAIN|[96]|Index on Product2 : [Id], cardinality: 1, sobjectCardinality: 39, relativeCost 0.083
+13:41:50.190 (311840057)|SOQL_EXECUTE_END|[96]|Rows:1
+13:41:50.190 (365504942)|DML_BEGIN|[162]|Op:Insert|Type:PricebookEntry|Rows:1
+13:41:50.190 (384018466)|DML_END|[162]
+13:41:50.190 (384253090)|DML_BEGIN|[167]|Op:Insert|Type:PricebookEntry|Rows:1
+13:41:50.190 (391263204)|DML_END|[167]
+13:41:50.392 (392571354)|CUMULATIVE_LIMIT_USAGE
+13:41:50.392 (392571354)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 162 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:41:50.392 (392571354)|LIMIT_USAGE_FOR_NS|vlocity_cmt|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 4 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 4 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:41:50.392 (392571354)|CUMULATIVE_LIMIT_USAGE_END
+
+13:41:50.190 (399010258)|SOQL_EXECUTE_BEGIN|[78]|Aggregations:0|SELECT Id, GlobalKey2__c, PriceListId__r.Pricebook2Id__c FROM PricingElement__c WHERE Id = :tmpVar1
+13:41:50.190 (405107438)|SOQL_EXECUTE_EXPLAIN|[78]|No explain plan is available
+13:41:50.190 (405122471)|SOQL_EXECUTE_END|[78]|Rows:1
+13:41:50.190 (405625906)|SOQL_EXECUTE_BEGIN|[91]|Aggregations:0|SELECT Id FROM Pricebook2 WHERE IsStandard = TRUE LIMIT 1
+13:41:50.190 (408230297)|SOQL_EXECUTE_EXPLAIN|[91]|TableScan on Pricebook2 : [], cardinality: 1, sobjectCardinality: 2, relativeCost 0.65
+13:41:50.190 (408243141)|SOQL_EXECUTE_END|[91]|Rows:1
+13:41:50.190 (409466533)|SOQL_EXECUTE_BEGIN|[95]|Aggregations:0|SELECT Id, Name, Product2Id, Pricebook2Id, Product2.IsActive FROM PricebookEntry WHERE Product2Id = :tmpVar1
+13:41:50.190 (416826777)|SOQL_EXECUTE_EXPLAIN|[95]|No explain plan is available
+13:41:50.190 (416841648)|SOQL_EXECUTE_END|[95]|Rows:2
+13:41:50.190 (417305210)|SOQL_EXECUTE_BEGIN|[96]|Aggregations:0|SELECT Id, IsActive FROM Product2 WHERE ID = :tmpVar1
+13:41:50.190 (421031466)|SOQL_EXECUTE_EXPLAIN|[96]|Index on Product2 : [Id], cardinality: 1, sobjectCardinality: 39, relativeCost 0.083
+13:41:50.190 (421044384)|SOQL_EXECUTE_END|[96]|Rows:1
+13:41:50.190 (426625591)|DML_BEGIN|[162]|Op:Insert|Type:PricebookEntry|Rows:1
+13:41:50.190 (438199783)|DML_END|[162]
+13:41:50.190 (438349200)|DML_BEGIN|[167]|Op:Insert|Type:PricebookEntry|Rows:1
+13:41:50.190 (445837599)|DML_END|[167]
+13:41:50.446 (446655638)|CUMULATIVE_LIMIT_USAGE
+13:41:50.446 (446655638)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 162 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:41:50.446 (446655638)|LIMIT_USAGE_FOR_NS|vlocity_cmt|
+  Number of SOQL queries: 8 out of 100
+  Number of query rows: 10 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 6 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 6 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:41:50.446 (446655638)|CUMULATIVE_LIMIT_USAGE_END
+
+13:41:50.457 (457771768)|CUMULATIVE_LIMIT_USAGE
+13:41:50.457 (457771768)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 162 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:41:50.457 (457771768)|LIMIT_USAGE_FOR_NS|vlocity_cmt|
+  Number of SOQL queries: 8 out of 100
+  Number of query rows: 10 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 6 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 6 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:41:50.457 (457771768)|CUMULATIVE_LIMIT_USAGE_END
+
+13:41:50.476 (476966168)|CUMULATIVE_LIMIT_USAGE
+13:41:50.476 (476966168)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 162 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:41:50.476 (476966168)|LIMIT_USAGE_FOR_NS|vlocity_cmt|
+  Number of SOQL queries: 8 out of 100
+  Number of query rows: 10 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 6 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 6 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:41:50.476 (476966168)|CUMULATIVE_LIMIT_USAGE_END
+
+13:41:50.481 (481819115)|CUMULATIVE_LIMIT_USAGE
+13:41:50.481 (481819115)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 162 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:41:50.481 (481819115)|LIMIT_USAGE_FOR_NS|vlocity_cmt|
+  Number of SOQL queries: 8 out of 100
+  Number of query rows: 10 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 6 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 6 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:41:50.481 (481819115)|CUMULATIVE_LIMIT_USAGE_END
+
+13:41:50.484 (484878460)|CUMULATIVE_LIMIT_USAGE
+13:41:50.484 (484878460)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 162 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:41:50.484 (484878460)|LIMIT_USAGE_FOR_NS|vlocity_cmt|
+  Number of SOQL queries: 8 out of 100
+  Number of query rows: 10 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 6 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 6 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:41:50.484 (484878460)|CUMULATIVE_LIMIT_USAGE_END
+
+13:41:50.190 (495592076)|DML_END|[23]
+13:41:50.190 (559891994)|SOQL_EXECUTE_BEGIN|[204]|Aggregations:0|SELECT id, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, lastvieweddate, lastreferenceddate, vlocity_cmt__pricelistid__c, vlocity_cmt__basepricelistid__c, vlocity_cmt__displaytext__c, vlocity_cmt__effectivefromdate__c, vlocity_cmt__effectiveuntildate__c, vlocity_cmt__globalkey__c, vlocity_cmt__isactive__c, vlocity_cmt__isbaseprice__c, vlocity_cmt__isoverride__c, vlocity_cmt__isvirtualprice__c, vlocity_cmt__offerid__c, vlocity_cmt__pricelistname__c, vlocity_cmt__pricingelementamount__c, vlocity_cmt__pricingelementglobalkey__c, vlocity_cmt__pricingelementid__c, vlocity_cmt__pricingmatrixbindingdata__c, vlocity_cmt__productid__c, vlocity_cmt__promotionid__c, vlocity_cmt__promotionitemid__c, vlocity_cmt__rulesdescription__c, vlocity_cmt__timeplanid__c, vlocity_cmt__timepolicyid__c, vlocity_cmt__pricebookentryid__c, vlocity_cmt__ProductId__r.Name, vlocity_cmt__ProductId__r.vlocity_cmt__VersionLabel__c, vlocity_cmt__ProductId__r.vlocity_cmt__VersionStartDateTime__c, vlocity_cmt__ProductId__r.vlocity_cmt__VersionEndDateTime__c, vlocity_cmt__ProductId__r.ProductCode, vlocity_cmt__PriceListId__r.Name, vlocity_cmt__PriceListId__r.vlocity_cmt__ParentPriceListId__c, vlocity_cmt__PricingElementId__r.id, vlocity_cmt__PricingElementId__r.ownerid, vlocity_cmt__PricingElementId__r.isdeleted, vlocity_cmt__PricingElementId__r.name, vlocity_cmt__PricingElementId__r.createddate, vlocity_cmt__PricingElementId__r.createdbyid, vlocity_cmt__PricingElementId__r.lastmodifieddate, vlocity_cmt__PricingElementId__r.lastmodifiedbyid, vlocity_cmt__PricingElementId__r.systemmodstamp, vlocity_cmt__PricingElementId__r.lastvieweddate, vlocity_cmt__PricingElementId__r.lastreferenceddate, vlocity_cmt__PricingElementId__r.vlocity_cmt__adjustmentvalue__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__amount__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__calculationtype__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__code__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__currencycode__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__displaytext__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__effectivefromdate__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__effectiveuntildate__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__globalkey2__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__globalkey__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__helptext__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__isactive__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__isoverride__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__isreusable__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__loyaltyamount__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__loyaltycode__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__objecttypeid__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__offerid__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__perusageamount__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__perusagemeasurementid__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__perusageunitofmeasure__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__pricelistid__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__pricingmatrixbindingdata__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__pricingmatrixid__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__pricingvariableappliesto__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__pricingvariableid__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__pricingvariabletype__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__productid__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__promotionid__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__ruleinfo__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__timeplanid__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__versionnumber__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.id, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.ownerid, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.isdeleted, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.name, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.createddate, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.createdbyid, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.lastmodifieddate, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.lastmodifiedbyid, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.systemmodstamp, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.lastvieweddate, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.lastreferenceddate, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__adjustmentmethod__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__aggregation__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__appliestovariableid__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__appliesto__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__chargetype__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__code__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__currencytype__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__description__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__globalkey__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__isactive__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__recurringfrequency__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__scope__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__subtype__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__type__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__valuetype__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.id, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.ownerid, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.isdeleted, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.name, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.createddate, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.createdbyid, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.lastmodifieddate, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.lastmodifiedbyid, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.systemmodstamp, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.lastvieweddate, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.lastreferenceddate, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.vlocity_cmt__adjustmentmethod__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.vlocity_cmt__aggregation__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.vlocity_cmt__appliestovariableid__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.vlocity_cmt__appliesto__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.vlocity_cmt__chargetype__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.vlocity_cmt__code__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.vlocity_cmt__currencytype__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.vlocity_cmt__description__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.vlocity_cmt__globalkey__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.vlocity_cmt__isactive__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.vlocity_cmt__recurringfrequency__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.vlocity_cmt__scope__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.vlocity_cmt__subtype__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.vlocity_cmt__type__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__r.vlocity_cmt__AppliesToVariableId__r.vlocity_cmt__valuetype__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.id, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.ownerid, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.isdeleted, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.name, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.createddate, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.createdbyid, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.lastmodifieddate, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.lastmodifiedbyid, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.systemmodstamp, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.lastvieweddate, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.lastreferenceddate, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.vlocity_cmt__active__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.vlocity_cmt__description__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.vlocity_cmt__domain__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.vlocity_cmt__effectiveenddate__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.vlocity_cmt__effectivestartdate__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.vlocity_cmt__globalkey__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.vlocity_cmt__stackable__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.vlocity_cmt__unitofmeasureclass__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.vlocity_cmt__unitofmeasureelement__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PerUsageMeasurementId__r.vlocity_cmt__visibleid__c, vlocity_cmt__TimePlanId__r.id, vlocity_cmt__TimePlanId__r.ownerid, vlocity_cmt__TimePlanId__r.isdeleted, vlocity_cmt__TimePlanId__r.name, vlocity_cmt__TimePlanId__r.createddate, vlocity_cmt__TimePlanId__r.createdbyid, vlocity_cmt__TimePlanId__r.lastmodifieddate, vlocity_cmt__TimePlanId__r.lastmodifiedbyid, vlocity_cmt__TimePlanId__r.systemmodstamp, vlocity_cmt__TimePlanId__r.lastvieweddate, vlocity_cmt__TimePlanId__r.lastreferenceddate, vlocity_cmt__TimePlanId__r.vlocity_cmt__description__c, vlocity_cmt__TimePlanId__r.vlocity_cmt__effectiveenddate__c, vlocity_cmt__TimePlanId__r.vlocity_cmt__effectivestartdate__c, vlocity_cmt__TimePlanId__r.vlocity_cmt__frequencyunitofmeasure__c, vlocity_cmt__TimePlanId__r.vlocity_cmt__frequency__c, vlocity_cmt__TimePlanId__r.vlocity_cmt__globalkey__c, vlocity_cmt__TimePlanId__r.vlocity_cmt__isactive__c, vlocity_cmt__TimePlanId__r.vlocity_cmt__repeat__c, vlocity_cmt__TimePlanId__r.vlocity_cmt__totaldurationuom__c, vlocity_cmt__TimePlanId__r.vlocity_cmt__totalduration__c, vlocity_cmt__TimePolicyId__r.id, vlocity_cmt__TimePolicyId__r.ownerid, vlocity_cmt__TimePolicyId__r.isdeleted, vlocity_cmt__TimePolicyId__r.name, vlocity_cmt__TimePolicyId__r.createddate, vlocity_cmt__TimePolicyId__r.createdbyid, vlocity_cmt__TimePolicyId__r.lastmodifieddate, vlocity_cmt__TimePolicyId__r.lastmodifiedbyid, vlocity_cmt__TimePolicyId__r.systemmodstamp, vlocity_cmt__TimePolicyId__r.lastvieweddate, vlocity_cmt__TimePolicyId__r.lastreferenceddate, vlocity_cmt__TimePolicyId__r.vlocity_cmt__description__c, vlocity_cmt__TimePolicyId__r.vlocity_cmt__effectiveenddate__c, vlocity_cmt__TimePolicyId__r.vlocity_cmt__effectivestartdate__c, vlocity_cmt__TimePolicyId__r.vlocity_cmt__endtimepolicy__c, vlocity_cmt__TimePolicyId__r.vlocity_cmt__globalkey__c, vlocity_cmt__TimePolicyId__r.vlocity_cmt__isactive__c, vlocity_cmt__TimePolicyId__r.vlocity_cmt__isendproratable__c, vlocity_cmt__TimePolicyId__r.vlocity_cmt__isstartproratable__c, vlocity_cmt__TimePolicyId__r.vlocity_cmt__isstarttimedelayed__c, vlocity_cmt__TimePolicyId__r.vlocity_cmt__starttimedelayoffsetuom__c, vlocity_cmt__TimePolicyId__r.vlocity_cmt__starttimedelayoffset__c, vlocity_cmt__TimePolicyId__r.vlocity_cmt__starttimepolicy__c FROM vlocity_cmt__PriceListEntry__c WHERE (Id IN  ( 'a41Hp000001xwLXIAY' ) )  ORDER BY Id
+13:41:50.190 (601836131)|SOQL_EXECUTE_EXPLAIN|[204]|No explain plan is available
+13:41:50.190 (601857534)|SOQL_EXECUTE_END|[204]|Rows:1
+13:41:50.190 (630376496)|SOQL_EXECUTE_BEGIN|[210]|Aggregations:0|SELECT Id, Name, RecordTypeId, vlocity_cmt__Creator__c, vlocity_cmt__Description__c, vlocity_cmt__GlobalKey__c, vlocity_cmt__IsActive__c, vlocity_cmt__IsDefault__c, vlocity_cmt__LastModifier__c, vlocity_cmt__OriginalCreatedDate__c, vlocity_cmt__OriginalLastModifiedDate__c, vlocity_cmt__ProjectOwner__c, vlocity_cmt__Status__c FROM vlocity_cmt__Project__c WHERE vlocity_cmt__GlobalKey__c = :globalKey ORDER BY Name ASC NULLS FIRST 
+13:41:50.190 (639312141)|SOQL_EXECUTE_EXPLAIN|[210]|TableScan on vlocity_cmt__Project__c : [], cardinality: 1, sobjectCardinality: 1, relativeCost 0.65
+13:41:50.190 (639331113)|SOQL_EXECUTE_END|[210]|Rows:1
+13:41:50.190 (653583287)|SOQL_EXECUTE_BEGIN|[346]|Aggregations:0|SELECT Id, Name, vlocity_cmt__Action__c, vlocity_cmt__GlobalKey__c, vlocity_cmt__ItemGlobalKey__c, vlocity_cmt__ItemId__c, vlocity_cmt__ItemType__c, vlocity_cmt__ItemVersion__c, vlocity_cmt__ParentItemId__c, vlocity_cmt__ProjectId__c, vlocity_cmt__RootItemId__c FROM vlocity_cmt__ProjectItem__c WHERE vlocity_cmt__ProjectId__c = :workSetId  AND vlocity_cmt__ItemId__c IN :itemIds ORDER BY Name ASC NULLS FIRST 
+13:41:50.190 (664370183)|SOQL_EXECUTE_EXPLAIN|[346]|Index on vlocity_cmt__ProjectItem__c : [vlocity_cmt__ItemId__c], cardinality: 1, sobjectCardinality: 248, relativeCost 0.04
+13:41:50.190 (664386926)|SOQL_EXECUTE_END|[346]|Rows:2
+13:41:50.190 (693212332)|SOQL_EXECUTE_BEGIN|[204]|Aggregations:0|SELECT vlocity_cmt__PricingElementId__c,  vlocity_cmt__DisplayText__c, vlocity_cmt__PricingElementId__r.vlocity_cmt__PricingVariableId__c FROM vlocity_cmt__PriceListEntry__c WHERE (Id = 'a41Hp000001xwLXIAY')  ORDER BY Id ALL ROWS 
+13:41:50.190 (699520389)|SOQL_EXECUTE_EXPLAIN|[204]|No explain plan is available
+13:41:50.190 (699537845)|SOQL_EXECUTE_END|[204]|Rows:1
+13:41:50.190 (709711572)|SOQL_EXECUTE_BEGIN|[167]|Aggregations:0|SELECT vlocity_cmt__ChargeType__c,  vlocity_cmt__Type__c FROM vlocity_cmt__PricingVariable__c WHERE Id =:sObjId
+13:41:50.190 (713708790)|SOQL_EXECUTE_EXPLAIN|[167]|Index on vlocity_cmt__PricingVariable__c : [Id], cardinality: 1, sobjectCardinality: 72, relativeCost 0.048
+13:41:50.190 (713726779)|SOQL_EXECUTE_END|[167]|Rows:1
+13:41:50.190 (723756528)|DML_BEGIN|[23]|Op:Update|Type:SObject|Rows:1
+13:41:50.737 (737352029)|CUMULATIVE_LIMIT_USAGE
+13:41:50.737 (737352029)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 330 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:41:50.737 (737352029)|LIMIT_USAGE_FOR_NS|vlocity_cmt|
+  Number of SOQL queries: 13 out of 100
+  Number of query rows: 16 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 7 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 7 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:41:50.737 (737352029)|CUMULATIVE_LIMIT_USAGE_END
+
+13:41:50.753 (753364728)|CUMULATIVE_LIMIT_USAGE
+13:41:50.753 (753364728)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 330 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:41:50.753 (753364728)|LIMIT_USAGE_FOR_NS|vlocity_cmt|
+  Number of SOQL queries: 13 out of 100
+  Number of query rows: 16 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 7 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 7 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:41:50.753 (753364728)|CUMULATIVE_LIMIT_USAGE_END
+
+13:41:50.190 (757113395)|DML_END|[23]
+13:41:50.190 (769935463)|SOQL_EXECUTE_BEGIN|[507]|Aggregations:0|SELECT Id, Name, vlocity_cmt__Action__c, vlocity_cmt__GlobalKey__c, vlocity_cmt__ItemGlobalKey__c, vlocity_cmt__ItemId__c, vlocity_cmt__ItemType__c, vlocity_cmt__ItemVersion__c, vlocity_cmt__ParentItemId__c, vlocity_cmt__ProjectId__c, vlocity_cmt__RootItemId__c FROM vlocity_cmt__ProjectItem__c WHERE vlocity_cmt__ProjectId__c = :workSetId ORDER BY Name ASC NULLS FIRST 
+13:41:50.190 (780354825)|SOQL_EXECUTE_EXPLAIN|[507]|TableScan on vlocity_cmt__ProjectItem__c : [], cardinality: 50, sobjectCardinality: 248, relativeCost 1.1
+13:41:50.190 (780373070)|SOQL_EXECUTE_END|[507]|Rows:280

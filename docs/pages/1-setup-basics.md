@@ -29,6 +29,14 @@ Notice that there **are** Cost / Margin Pricing Variables now.
 
 Navigate to *Vlocity Product Designer > Products > List View: All Products*. Open the Boiler Insurance Product and navigate to the Pricing tab.
 
+#### Define Margin Calculation Type
+
+Navigate to CMT Administration > CPQ Configuration Setup and earch for an entry: MarginCalculationType.
+
+Set this to 'margin' if you want margin to be calculated. Set it to 'markup' if you want markup to be calculated.
+
+![MarginCalculationType][MarginCalculationType]
+
 #### Create a Price List Entry under Costs by click on *New Cost*.
 
 ![Cost PLE][1-cost-ple]
@@ -103,3 +111,4 @@ Notice that there are rollups at the header level for One Time Charges, Recurrin
 [1-order-layout]: ../images/1-order-layout.png
 [1-order-record]: ../images/1-order-record.png
 [1-order-record]: ../images/1-order-record.png
+[MarginCalculationType]: ../images/1-MarginCalculationType.png
